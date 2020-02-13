@@ -1,7 +1,7 @@
 import React from "react";
 import PhotoList from "./components/PhotoList";
 
-class App extends React.Component {
+export default class App extends React.Component {
   state = {
     todos: [],
     url: "https://jsonplaceholder.typicode.com/photos"
@@ -36,5 +36,3 @@ class App extends React.Component {
     return <PhotoList list={this.state.todos} del={this.state.del} />;
   }
 }
-
-export default App;
